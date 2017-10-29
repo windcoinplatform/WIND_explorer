@@ -36,7 +36,7 @@ const config = {
     styles: [
         'node_modules/angular/angular-csp.css',
         'node_modules/bootstrap/dist/css/bootstrap.css',
-        'node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css',
+        'node_modules/angular-material/angular-material.css',
         'src/css/style.css',
         'node_modules/angular-loading-bar/build/loading-bar.css'
     ],
