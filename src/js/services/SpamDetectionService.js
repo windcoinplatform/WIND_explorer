@@ -42,7 +42,8 @@ export class SpamDetectionService extends ConfigurableService {
                 // cache should expire in one day
                 this.cache.expirationTime = new Date().getTime() + MILLISECONDS_PER_DAY;
                 this.storageService.saveAntispamCache(this.cache);
-            }).finally(() => {
+                this.updating = false;
+            }).catch(() => {
                 this.updating = false;
             });
         }

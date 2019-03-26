@@ -95,8 +95,15 @@ export class SingleBlockPage extends React.Component {
             .forNetwork(networkId)
             .blockService()
             .loadBlock(height)
-            .then(result => this.setState(result))
-            .finally(() => this.setState({loading: false}));
+            .then(result => {
+                this.setState(result);
+                this.setState({loading: false});
+            })
+            .catch(e => {
+                this.setState({loading: false});
+
+                throw e;
+            });
     };
 
     showBlock = height => {

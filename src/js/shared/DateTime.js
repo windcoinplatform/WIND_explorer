@@ -1,4 +1,4 @@
-const DEFAULT_LOCALE = 'ru-Ru';
+const LOCALES = ['ru-Ru', 'en-GB', 'en-US'];
 
 export default class DateTime {
     instant;
@@ -7,8 +7,8 @@ export default class DateTime {
 
     constructor(timestamp) {
         this.instant = new Date(timestamp);
-        this.date = this.instant.toLocaleDateString(DEFAULT_LOCALE);
-        this.time = this.instant.toLocaleTimeString(DEFAULT_LOCALE);
+        this.date = this.instant.toLocaleDateString(LOCALES);
+        this.time = this.instant.toLocaleTimeString(LOCALES);
     }
 
     toLongString() {
