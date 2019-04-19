@@ -81,8 +81,8 @@ export class AddressService extends ApiClientService {
     };
 
     decompileScript = (scriptBase64) => {
-        const config = this.configuration();
-        const api = thirdPartyApi(config.spamListUrl, config.decompileScriptUrl);
+        const decompileUrl = 'https://testnode1.wavesnodes.com/utils/script/decompile';
+        const api = thirdPartyApi('', decompileUrl);
 
         return api.decompileScript(scriptBase64).then(decompileResponse => decompileResponse.data.script);
     };
