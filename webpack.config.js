@@ -105,7 +105,8 @@ var config = {
 
 const networks = {
     mainnet: ['mainnet', 'testnet'],
-    devnet: ['devnet']
+    devnet: ['devnet'],
+    toolkit: ['toolkit']
 };
 
 module.exports = (env, argv) => {
@@ -133,13 +134,17 @@ module.exports = (env, argv) => {
         sentryDsn = 'https://9ee88f8e9ec741d5897e64c89a38e4f6@sentry.io/1401739';
     }
 
+    const apiNodeUrl = env.TOOLKIT_API_NODE_URL || '';
+    const nodeList = env.TOOLKIT_NODE_LIST || '';
     const network = (env && env.network) || 'mainnet';
     const networkConfiguration = networks[network];
     config.plugins.push(new webpack.DefinePlugin({
         __NETWORKS__: JSON.stringify(networkConfiguration),
         __GOOGLE_TRACKING_ID__: JSON.stringify(googleTrackingId),
         __AMPLITUDE_API_KEY__: JSON.stringify(amplitudeApiKey),
-        __SENTRY_DSN__: JSON.stringify(sentryDsn)
+        __SENTRY_DSN__: JSON.stringify(sentryDsn),
+        __TOOLKIT_API_NODE_URL__: JSON.stringify(apiNodeUrl),
+        __TOOLKIT_NODES_LIST__: JSON.stringify(nodeList)
     }));
 
     return config;
