@@ -10,7 +10,7 @@
     "license": "Apache-2.0",
     "scripts": {
         "start": "webpack-dev-server --hot --open --mode development --history-api-fallback --env.network=mainnet",
-        "start:toolkit": "webpack-dev-server --mode development --history-api-fallback --env.network=toolkit --env.TOOLKIT_API_NODE_URL=https://testnode1.wavesnodes.com --env.TOOLKIT_NODE_LIST=https://testnode2.wavesnodes.com,https://testnode3.wavesnodes.com",
+        "start:toolkit": "webpack-dev-server --mode development --history-api-fallback --host 0.0.0.0 --env.network=toolkit",
         "app:dev": "webpack --mode development --config=webpack.config.js",
         "app:prod": "webpack --mode production --config=webpack.config.js",
         "test": "jest",

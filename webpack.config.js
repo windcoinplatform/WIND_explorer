@@ -121,6 +121,10 @@ module.exports = (env, argv) => {
             openAnalyzer: false
         }));
 
+        config.devServer = {
+            port: 8080
+        };
+
         googleTrackingId = 'UA-75283398-17';
         amplitudeApiKey = '0b3481b4cb40d949738933a57eaeb4fe';
         sentryDsn = 'https://1b5911ae5b1849b9b114809877eb6d84@sentry.io/1401737';
