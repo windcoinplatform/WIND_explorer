@@ -2,7 +2,7 @@ FROM node:8 AS build
 WORKDIR /app
 COPY . ./
 RUN yarn install
-RUN ./node_modules/.bin/gulp build-official-prod
+RUN ./node_modules/.bin/gulp build-stagenet
 
 FROM nginx:stable-alpine
 RUN rm -rf /etc/nginx/conf.d/*
