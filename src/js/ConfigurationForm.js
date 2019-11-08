@@ -97,7 +97,7 @@ export default class ConfigurationForm extends React.Component {
 
                         <div className="row">
                             <label>Node address</label>
-                            <Field name="apiBaseUrl" component={InputComponent} placeholder="Node absolute URL with port number" />
+                            apiBaseUrl: "http://144.91.84.27:6869">
                         </div>
 
                         <div className="row buttons-wrapper">
