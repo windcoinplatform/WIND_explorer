@@ -1,9 +1,8 @@
 import mainnet from './config.mainnet';
-import testnet from './config.testnet';
-import devnet from './config.devnet';
-import stagenet from './config.stagenet';
+import custom from './config.custom';
 
-const configuredNetworks = [mainnet, testnet, devnet, stagenet]
+
+const configuredNetworks = [mainnet, custom]
     .filter(item => __NETWORKS__.includes(item.networkId));
 
 export default configuredNetworks;
