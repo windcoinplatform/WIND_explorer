@@ -6,5 +6,5 @@ export default {
     apiBaseUrl: 'http://144.91.84.27:6869',
     useCustomRequestConfig: false,
    
-    nodes: [{url: nodeUrl, maintainer: 'Waves'}]
+    nodes: [{url: nodeUrl, maintainer: 'Wind'}]
 };
