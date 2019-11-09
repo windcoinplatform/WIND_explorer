@@ -1,0 +1,20 @@
+<svg width="124" height="28" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <radialGradient cy="0.5" cx="0.5" r="0.949076" spreadMethod="pad" id="svg_26">
+   <stop offset="0.148438" stop-color="#ff0000"/>
+   <stop offset="0.992188" stop-color="#00ffff"/>
+  </radialGradient>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" transform="matrix(1.5484700686390624,0,0,1.4726086520192894,-3.097830194291788,-7.225205851074293) " font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Junction, sans-serif" font-size="24" id="svg_11" y="23.136801" x="2.535682" stroke-opacity="null" stroke-width="0" fill="#ff0000">WIND</text>
+  <ellipse fill-opacity="0.84" stroke="#000" stroke-dasharray="2,2" ry="10.18742" rx="10.687415" id="svg_12" cy="13.494144" cx="110.99961" stroke-opacity="null" stroke-width="1.5" fill="url(#svg_26)"/>
+  <ellipse id="svg_13" cy="3.306725" cx="97.937214" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <path id="svg_19" d="m77.812373,4.181718" opacity="0.5" stroke-opacity="null" stroke-dasharray="2,2" stroke-width="1.5" stroke="#000" fill="#0404f2"/>
+  <text stroke="#000" xml:space="preserve" text-anchor="start" font-family="Junction, sans-serif" font-size="1" id="svg_20" y="13.681644" x="122.812018" stroke-opacity="null" stroke-width="0" fill="#ff0000">M</text>
+ </g>
+</svg>
