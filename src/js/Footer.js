@@ -30,7 +30,7 @@ const Footer = ({version}) => {
                     (<a key={item.id} className={`social ${item.id}`} href={item.url} target="_blank"></a>))}
             </div>
             <div>
-                <a className="fade" href="http://173.212.251.111:60863" target="_blank">WINDWALLET</a>
+                <a className="fade" href="http://144.91.84.27/:60863" target="_blank">WINDWALLET</a>
             </div>
         </div>
     );
